@@ -1,0 +1,7 @@
+This is AnyKernel template to apply on Huawei IDEOS X5 U8800.
+
+To start:
+1. Replace the kernel/zImage with the new kernel.
+2. Compress the directories as ZIP so if you open the ZIP, you will have kernel and META-INF directories the first.
+3. Use an auto-signer tool, to allow flashing the ZIP. Use this link or search for "testsign.jar": http://www.mediafire.com/?ybdd7cnhh52l13e
+4. Insert to command line: java -classpath <path/to/testsign/testsign.jar> testsign <compressed zip>.zip <new zip name>.zip
